@@ -27,7 +27,7 @@ const defaultOpts = {
         <ion-input
                 #inputElem
                 (keyup)="getItems($event)"
-                (tap)="handleTap($event)"
+                (click)="handleTap($event)"
                 [(ngModel)]="keyword"
                 (ngModelChange)="updateModel()"
                 [placeholder]="options.placeholder == null ? defaultOpts.placeholder : options.placeholder"
